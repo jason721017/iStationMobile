@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.min.css" />
+        <title>iStation</title>
+    </head>
+    <body>
+        <div style="margin-top:20px">
+            
+            <!-- Static navbar -->
+            <div class=" navbar-default" role="navigation" style="background-color:#fff">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">STORE</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Promotion</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Apparel</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Apparel</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+            
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="">
+                <img src="img/promo1.png" class="img-responsive img-promo"></img>
+                <img src="img/promo3.png" class="img-responsive img-promo"></img>
+                <img src="img/promo2.png" class="img-responsive img-promo"></img>
+                <div id="closetBeacon"></div>
+            </div>
+            
+        </div> <!-- /container -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cordova_plugins.js"></script>
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            window.onerror = function(message, url, lineNumber) {
+                console.log("Error: "+message+" in "+url+" at line "+lineNumber);
+            }
+        </script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+             <script type="text/javascript" src="plugins/estimote/estimoteBeacons.js"></script>
+    </body>
+</html>
